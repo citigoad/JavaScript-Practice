@@ -6,3 +6,13 @@ function fRange(Start, end){
     }    
   return myArr;
 }
+
+var sum = 0;
+function fsum(Arr){
+  for(i=0;i<Arr.length; i++){
+    sum = sum+Arr[i];
+  }
+  return sum;
+}
+
+fsum(fRange(1,10)); //55
