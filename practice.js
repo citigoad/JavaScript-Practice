@@ -16,3 +16,17 @@ function fsum(Arr){
 }
 
 fsum(fRange(1,10)); //55
+
+function fStepRange(Start, end, Step)
+{
+  myArr.length = 0;
+  if (!isNaN(Step))
+    for(var i=start;i<=end;i+step){
+      myArr.push(i);
+    }
+  else
+    for(var i=start;i<=end;i++){
+      myArr.push(i);
+    }
+  return myArr;
+}
