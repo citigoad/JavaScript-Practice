@@ -1,0 +1,16 @@
+1) Flattening.
+
+function reduce(array, combine, start) {
+  var current = [];
+  for (var i = 0; i < array.length; i++)
+    current = combine(current, array[i]);
+  return current;
+}
+
+1) Use the reduce method in combination with 
+the concat method to “flatten” an array of arrays into a single array that has all the elements of the input arrays.
+arrays = [[1, 2, 3], [4, 5], [6]];
+sol : 
+console.log(reduce(arrays, function(a, b) {
+  return a.concat(b);
+}, 0));
