@@ -1,0 +1,15 @@
+sql functions I have learnt in Hackerrank
+
+mod(id,2) - to find modulus and select accordingly.
+
+len() to find the length of the string.
+
+union - uniting two quiries - suppose if u want first and last record in one select query.
+
+like for quering substings,  to search multiple strings u should put like this///
+select city from station where city like 'a%' or city like 'e%' or city like 'i%' or city like 'o%' or city like 'u%';
+select city from station where city regexp '^[aeiou].*[aeiou]$';
+select distinct city from station where city not regexp '[aeiou]$';
+
+regexp - ^ starting
+       - $ ending
