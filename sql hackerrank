@@ -37,3 +37,8 @@ from occupations
 group by occupation
 order by total
 
+----- pivoting table u learnt 
+
+--- trunc function
+select trunc(max(lat_n),4) from station where lat_n<137.2345;
+
